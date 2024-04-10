@@ -2,13 +2,13 @@
 
 Bot that downloads tiktok videos (via tikwm) to telegram. Working on [Cloudflare Workers](https://workers.cloudflare.com/).
 
-#### Demo: [@tiktok_chat_yep_bot](https://t.me/TikClipBot)
+#### Demo: [@TikClipBot](https://t.me/TikClipBot)
 
 ## Installation
 
 <details>
   <summary>Install bot on already existing environment.</summary>
-  You can install your bot to already existing environment by executing <code>/addbot</code> command with token in <a href="https://t.me/tiktok_chat_yep_bot">@tiktok_chat_yep_bot</a>.
+  You can install your bot to already existing environment by executing <code>/addbot</code> command with token in <a href="https://t.me/TikClipBot">@TikClipBot</a>.
   <br>For example: <code>/addbot 123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11</code>.
   <br><b>Warning: you will not be able to use the bot for your own purposes until you uninstall it: <code>/delbot 123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11</code></b>
 </details>
@@ -25,6 +25,6 @@ cd telegram-tiktok-bot
 ```shell
 wrangler publish
 ```
-6. [Create telegram bot](https://core.telegram.org/bots/features#botfather)
+6. [Create telegram bot](7039124106:AAGBNlM7vrCwS2MZw9A1n1yfTdOIHVVrRHA)
 7. Set bot webhook. Replace <7039124106:AAGBNlM7vrCwS2MZw9A1n1yfTdOIHVVrRHA> with your bot token, <WORKER_URL> with CF worker url, <SECRET_KEY> with secret key in this link and open it: `https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=https://<WORKER_URL>/<BOT_TOKEN>/tt_bot&allowed_updates=[%22message%22]&secret_token=<SECRET_KEY>`
 8. Done! Now you can send TikTok link to your bot, and it should respond with video
