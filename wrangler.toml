@@ -1,7 +1,7 @@
 name = "tg-TikClipBot"
-main = "src/index.js"
+main = "src/TikClipBot"
 compatibility_date = "2023-03-12"
 usage_model = "bundled"
 
-[vars]
+[sajjad]
 SECRET_KEY = "27285563"
